@@ -20,5 +20,6 @@ describe PagesController do
     it "should be sucessful" do
       get 'about'
       response.should be_success
+    end
   end
 end
