@@ -42,3 +42,66 @@
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-13 23:13:23) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-13 23:13:31) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-13 23:13:38) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-13 23:13:44) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:04:13) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 231ms (View: 222, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-14 13:04:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:10:37) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:19:12) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:42:54) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 602ms (View: 597, DB: 0) | 200 OK [http://localhost/pages/home]
