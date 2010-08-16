@@ -42,3 +42,272 @@
 [0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
   [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-13 23:13:23) [GET]
+
+ActionController::RoutingError (No route matches "/home" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-08-13 23:13:31) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-13 23:13:38) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-13 23:13:44) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:04:13) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 231ms (View: 222, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-14 13:04:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:10:37) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:19:12) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-14 13:42:54) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 602ms (View: 597, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:30:39) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (63.1ms)
+Rendered layouts/_header (29.2ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 437ms (View: 387, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:30:50) [GET]
+
+ActionController::RoutingError (No route matches "/home_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:31:17) [GET]
+
+ActionController::RoutingError (No route matches "/home_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:31:34) [GET]
+
+ActionController::RoutingError (No route matches "/home_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:31:45) [GET]
+
+ActionController::RoutingError (No route matches "/root_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:32:10) [GET]
+
+ActionController::RoutingError (No route matches "/root_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:32:15) [GET]
+
+ActionController::RoutingError (No route matches "/root_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:32:26) [GET]
+
+ActionController::RoutingError (No route matches "/home_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:34:26) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.3ms)
+Rendered layouts/_header (3.9ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:34:30) [GET]
+
+ActionController::RoutingError (No route matches "/root_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-15 22:35:20) [GET]
+
+ActionController::RoutingError (No route matches "/root_path" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:36:15) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (14.2ms)
+Rendered layouts/_header (2.9ms)
+Rendered layouts/_footer (2.4ms)
+Completed in 209ms (View: 201, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:36:18) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-15 22:36:22) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.5ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 65ms (View: 60, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-15 22:37:03) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2010-08-15 22:37:06) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (3.4ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 73ms (View: 64, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-15 22:37:09) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-15 22:38:25) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (2.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 23ms (View: 19, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2010-08-15 22:38:53) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (4.5ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:38:57) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.1ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-15 22:39:01) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.4ms)
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-15 22:39:05) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.5ms)
+Rendered layouts/_header (1.5ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2010-08-16 23:22:56) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (214.0ms)
+Rendered layouts/_header (5.4ms)
+Rendered layouts/_footer (1.2ms)
+Completed in 572ms (View: 477, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-16 23:23:41) [GET]
+
+ActionController::RoutingError (No route matches "/microposts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
