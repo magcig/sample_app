@@ -1,8 +1,11 @@
 require "autotest/growl"
 require "autotest/fsevent"
 
-Autotest.add_hook :initialize do |autotest|
-  autotest.add_mapping(/ˆspec\/integration\/.*_spec\.rb$/) do
-    autotest.files_matching(/ˆspec\/integration\/.*_spec\.rb$/)
-  end
-end
+Autotest.add_hook(:initialize) {|at|
+  # at.add_exception %r{^.git}  # ignore Version Control System
+  # at.add_exception %r{^./tmp}  # ignore temp files, lest autotest will run again, and again...
+  #  at.clear_mappings         # take out the default (test/test*rb)
+  at.add_mapping(%r{^spec/integration/.*.rb$}) {|f, _|
+    Dir['spec/integration/*.rb']
+  }
+}
