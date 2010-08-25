@@ -40,10 +40,13 @@ describe UsersController do
       response.should be_success
     end 
     
-    it "should have the right title" do
-      get 'new'
-      response.should have_tag("title", /Sign up/) 
-    end 
+    it "should have name, email, password and password_confirmation fields" do
+      get :new
+      response.should have_tag("input[name=?][type=?]", "user[name]", "text")
+      response.should have_tag("input[name=?][type=?]", "user[email]", "text")
+      response.should have_tag("input[name=?][type=?]", "user[password]", "password")
+      response.should have_tag("input[name=?][type=?]", "user[password_confirmation]", "password")
+    end
     
   end
   
@@ -88,6 +91,11 @@ describe UsersController do
       it "should have a welcome message" do
         post :create, :user => @attr
         flash[:success].should =~ /welcome to the sample app/i
+      end
+      
+      it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
       end
     end
   end

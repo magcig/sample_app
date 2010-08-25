@@ -987,3 +987,258 @@ Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.2ms)
 Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/users/1]
   [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-08-23 21:48:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-23 21:48:50) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.5ms)
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (1.4ms)
+Completed in 145ms (View: 143, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-23 21:48:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-23 21:49:25) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"qVAtzf3X2IwdvxlUp0zjyev2KttcEcBwNmkPTVWOBBw=", "controller"=>"users", "user"=>{"name"=>"Topo Gigio", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"topo.gigio@rai.it"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'topo.gigio@rai.it') LIMIT 1[0m
+  [4;35;1mUser Create (16.8ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Topo Gigio', 'fe6e8c207dc46016414875703a06389445c06f41a8c6e3226f616e5beb083642', 'dd628883d215bf2b428098549fecd3b10cf20353abf17582b7eff0a7b41c4059', '2010-08-23 19:49:26', '2010-08-23 19:49:26', 'topo.gigio@rai.it')[0m
+Redirected to http://localhost:3001/users/2
+Completed in 316ms (DB: 17) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-23 21:49:26) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 28ms (View: 18, DB: 0) | 200 OK [http://localhost/users/2]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-23 21:49:54) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"qVAtzf3X2IwdvxlUp0zjyev2KttcEcBwNmkPTVWOBBw=", "controller"=>"users", "user"=>{"name"=>"Tarcisio Sbolda", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 92ms (View: 17, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-23 21:50:40) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"qVAtzf3X2IwdvxlUp0zjyev2KttcEcBwNmkPTVWOBBw=", "controller"=>"users", "user"=>{"name"=>"Tarcisio Sbolda", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 38ms (View: 25, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-23 21:56:36) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-08-23 21:56:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-23 21:57:07) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"qVAtzf3X2IwdvxlUp0zjyev2KttcEcBwNmkPTVWOBBw=", "controller"=>"users", "user"=>{"name"=>"Mario Andretti", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"mario.andretti@lola.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mario.andretti@lola.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Mario Andretti', '9d95bae699561f622534f1fca7ca365050daa2ac874cf6a556f2f260c98f8638', 'dad923ff7a2b16bad4bc86380f758b1af9dbc3fd042c9d9f9199f8c1b98f44e8', '2010-08-23 19:57:07', '2010-08-23 19:57:07', 'mario.andretti@lola.com')[0m
+Redirected to http://localhost:3001/users/3
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-23 21:57:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/users/3]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-08-23 21:57:13) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100817115549)
+Migrating to AddEmailUniquenessIndex (20100817222433)
+Migrating to AddPasswordToUsers (20100818213211)
+Migrating to AddSaltToUsers (20100819102545)
+Migrating to AddRememberTokenToUsers (20100825101744)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (38.3ms)[0m   [0mALTER TABLE "users" ADD "remember_token" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100825101744')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "remember_token" varchar(255)) [0m
+  [4;35;1mSQL (437.0ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100825101744')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100817115549')[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100817222433')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100818213211')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100819102545')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2010-08-25 22:17:48) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.1ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 118ms (View: 116, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:18:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:20:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:20:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:20:31) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:20:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:20:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-08-25 22:21:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/signin]

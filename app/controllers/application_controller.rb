@@ -3,6 +3,7 @@
 
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
+  include SessionsHelper
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
   @base_title = "Ruby on Rails Tutorial Sample App"
